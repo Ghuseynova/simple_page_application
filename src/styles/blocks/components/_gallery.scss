@@ -1,0 +1,31 @@
+.gallery-wrapper {
+
+}
+
+.gallery {
+	padding: 0 2.5rem;
+	line-height: 0;
+    column-count: 3;
+    column-gap: 2.5rem;
+
+	&__item {
+
+	}
+}
+
+.item {
+
+	&__link {
+
+	}
+
+	&__img-wrap {
+		margin-bottom: 2.5rem;
+		cursor: zoom-in;
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+}

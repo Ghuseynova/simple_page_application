@@ -1,0 +1,19 @@
+//abstracts
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//base
+
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/default';
+@import 'base/utilities';
+
+//blocks
+
+@import 'blocks/standing';
+@import 'blocks/components';
+
+//pages
+@import 'pages/home'; 

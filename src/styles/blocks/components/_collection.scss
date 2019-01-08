@@ -1,0 +1,14 @@
+.collection-wrapper {
+	margin-right: 3rem;
+
+}
+
+.collection {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.collection-card-wrap {
+	flex: 0 0 calc(33.3333% - 4rem);
+	margin-left: 3rem;
+}
