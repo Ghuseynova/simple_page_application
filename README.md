@@ -5,7 +5,9 @@ HTML, CSS, JAVASCRIPT
 Создать Single Page Application, взаимодействующее с сервисом
 unsplash.com посредством public API.
 https://unsplash.com/documentation
-
+<br>
+<br>
+<br>
 <div>**** Требуемый функционал ****</div>
 <ul>
   <li> Вывод списка коллекций </li>
