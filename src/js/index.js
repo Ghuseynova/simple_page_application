@@ -30,7 +30,7 @@ const ListCollectionController = async () => {
 //Collection Controller
 const CollectionController = async () => {
 	const id = window.location.hash.replace('#', '');
-	console.log(id);
+	//console.log(id);
 
 	//create collection obj
 	stand.collection = new Collection(id, 2, key);
@@ -41,7 +41,7 @@ const CollectionController = async () => {
 		//get data and render element in screen
 		try {
 			//prepare UI for results
-			document.querySelector(".page").innerHTML = "";
+			//document.querySelector(".page").innerHTML = "";
 			//get info about collect
 			await stand.collection.getCollection()
 			.then(data => {
@@ -86,16 +86,13 @@ const PhotoController = async (e) => {
 
 	//UI Process
 	document.querySelector('.modal').addEventListener('click', PhotoView.closeModal);
-	document.querySelector('.modal__close').addEventListener('click', PhotoView.closeModal);
-	//Removing class Modal 
+	document.querySelector('.modal__close').addEventListener('click', PhotoView.closeModal); 
 }
 
 ListCollectionController();
+window.addEventListener('load', ListCollectionController)
 window.addEventListener('hashchange', () => {
 	CollectionController();
 	document.querySelector('.page').addEventListener('click', PhotoController);
 });
-const modal = document.querySelector('.modal');
-	if(document.body.contains(modal)) {
-	document.body.removeChild(modal);
-}
+

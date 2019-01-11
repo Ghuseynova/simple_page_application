@@ -65,6 +65,7 @@ export const renderPhoto = (data) => {
 	`;
 
 	document.querySelector(".modal").insertAdjacentHTML("beforeend", markUp);
+	document.body.classList.add('unscroll');
 }
 
 const formatDate = (date) => {
@@ -83,13 +84,12 @@ const formatDate = (date) => {
 export const closeModal = (e) => {
 	// alert('I am working');
 	e.stopPropagation();
-
 	document.querySelector('.modal').classList.add('invisible');
-
 	const modal = document.querySelector('.modal');
 	
 	if(document.body.contains(modal)) {
 		document.body.removeChild(modal);
+		document.body.classList.remove('unscroll');
 	}
 
 }

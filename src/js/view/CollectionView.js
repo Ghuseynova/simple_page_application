@@ -11,7 +11,7 @@ export const renderCollection = (data) => {
 			</div>
 		</div>
 	`;
-	document.querySelector(".page").insertAdjacentHTML("beforeend", markUp);
+	document.querySelector(".page").innerHTML = markUp;
 }
 
 export const renderCollPhoto = (data) => {

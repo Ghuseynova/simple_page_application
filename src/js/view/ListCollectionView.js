@@ -7,7 +7,7 @@ export const renderCollections = (data) => {
 			<div class="collection-card-wrap">
 				<div class="card">
 					<div class="card__imgs">
-						<a href="#${el.id}" class="card__link">
+						<a href="#${el.id}" class="card__link" target="_self">
 							<div class="card__link-col">
 								<img src="${el.preview_photos[0].urls.small}" alt="..." class="card__img">
 							</div>
