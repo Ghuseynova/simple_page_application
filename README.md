@@ -15,3 +15,4 @@ https://unsplash.com/documentation
   <li>Отображение выбранного изображения и подробной
 информацией̆
     о нем</li>
+  <a href="https://ghuseynova.github.io/simple_page_app/"> Demo </a>
